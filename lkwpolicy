@@ -1,0 +1,32 @@
+{
+    "policyId": "mytest:LKW-1",
+    "entries": {
+        "owner": {
+            "subjects": {
+                "nginx:ditto": {
+                    "type": "nginx basic auth user"
+                }
+            },
+            "resources": {
+                "thing:/": {
+                    "grant": [
+                        "READ","WRITE"
+                    ],
+                    "revoke": []
+                },
+                "policy:/": {
+                    "grant": [
+                        "READ","WRITE"
+                    ],
+                    "revoke": []
+                },
+                "message:/": {
+                    "grant": [
+                        "READ","WRITE"
+                    ],
+                    "revoke": []
+                }
+            }
+        }
+    }
+  }
