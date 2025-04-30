@@ -1,0 +1,77 @@
+{
+  "@context": [
+    "https://www.w3.org/2022/wot/td/v1.1"
+  ],
+  "@type": "tm:ThingModel",
+  "title": "Lkw",
+  "description": "A smart truck with features like fuel tank, tire pressure, speed and progress.",
+  "version": {
+    "model": "1.0.0"
+  },
+  "properties": {
+    "fuelTank": {
+      "type": "object",
+      "properties": {
+        "amount": {
+          "type": "number",
+          "description": "Current fuel amount in liters.",
+          "unit": "L"
+        },
+        "unit": {
+          "type": "string",
+          "enum": ["L"],
+          "description": "Unit of fuel."
+        }
+      }
+    },
+    "tirePressure": {
+      "type": "object",
+      "properties": {
+        "amount": {
+          "type": "number",
+          "description": "Current tire pressure in kPa.",
+          "unit": "kPa"
+        }
+      }
+    },
+    "velocity": {
+      "type": "object",
+      "properties": {
+        "amount": {
+          "type": "number",
+          "description": "Current speed in km/h.",
+          "unit": "km/h"
+        }
+      }
+    },
+    "progress": {
+      "type": "object",
+      "properties": {
+        "amount": {
+          "type": "number",
+          "description": "Progress percentage of the Lkw.",
+          "unit": "%"
+        }
+      }
+    }
+  },
+  "actions": {
+    "startJourney": {
+      "title": "Start the journey",
+      "description": "Initiates the journey of the truck.",
+      "type": "boolean"
+    },
+    "completeJourney": {
+      "title": "Complete the journey",
+      "description": "Marks the journey of the truck as completed.",
+      "type": "boolean"
+    }
+  },
+  "events": {
+    "arrivedAtDestination": {
+      "title": "Arrival at destination",
+      "description": "Event triggered when the truck arrives at its destination.",
+      "type": "boolean"
+    }
+  }
+}
