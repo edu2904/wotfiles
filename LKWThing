@@ -63,7 +63,18 @@
           "unit": "%"
         }
       }
+    },
+"cargo2": {
+      "type": "object",
+      "properties": {
+        "amount": {
+          "type": "number",
+          "description": "Progress percentage of the Lkw.",
+          "unit": "%"
+        }
+      }
     }
+
 
   },
   "actions": {
