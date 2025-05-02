@@ -1,99 +1,46 @@
 {
   "@context": [
-    "https://www.w3.org/2022/wot/td/v1.1"
+    "https://www.w3.org/2022/wot/td/v1.1",
+    {
+      "om2": "http://www.ontology-of-units-of-measure.org/resource/om-2/"
+    }
   ],
   "@type": "tm:ThingModel",
-  "title": "Lkw",
-  "description": "A smart truck with features like fuel tank, tire pressure, speed and progress.",
+  "title": "Smart Truck",
+  "description": "Ein smarter LKW mit eingebauten Sensoren für Benzinstand, Geschwindigkeit und Fahrfortschritt.",
   "version": {
     "model": "1.0.0"
   },
   "properties": {
-    "fuelTank": {
-      "type": "object",
-      "properties": {
-        "amount": {
-          "type": "number",
-          "description": "Current fuel amount in liters.",
-          "unit": "L"
-        },
-        "unit": {
-          "type": "string",
-          "enum": ["L"],
-          "description": "Unit of fuel."
-        }
-      }
+    "fuelSensor.fuelLevel": {
+      "title": "Benzinstand",
+      "description": "Aktueller Füllstand des Benzintanks in Litern.",
+      "type": "number",
+      "unit": "om2:litre",
+      "readOnly": true
     },
-    "tirePressure": {
-      "type": "object",
-      "properties": {
-        "amount": {
-          "type": "number",
-          "description": "Current tire pressure in kPa.",
-          "unit": "kPa"
-        }
-      }
+    "speedSensor.currentSpeed": {
+      "title": "Aktuelle Geschwindigkeit",
+      "description": "Momentane Geschwindigkeit des LKW in km/h.",
+      "type": "number",
+      "unit": "om2:kilometre-per-hour",
+      "readOnly": true
     },
-    "velocity": {
-      "type": "object",
-      "properties": {
-        "amount": {
-          "type": "number",
-          "description": "Current speed in km/h.",
-          "unit": "km/h"
-        }
-      }
-    },
-    "progress": {
-      "type": "object",
-      "properties": {
-        "amount": {
-          "type": "number",
-          "description": "Progress percentage of the Lkw.",
-          "unit": "%"
-        }
-      }
-    },
- "cargo": {
-      "type": "object",
-      "properties": {
-        "amount": {
-          "type": "number",
-          "description": "Progress percentage of the Lkw.",
-          "unit": "%"
-        }
-      }
-    },
-"cargo2": {
-      "type": "object",
-      "properties": {
-        "amount": {
-          "type": "number",
-          "description": "Progress percentage of the Lkw.",
-          "unit": "%"
-        }
-      }
+    "progressTracker.progress": {
+      "title": "Fahrfortschritt",
+      "description": "Prozentualer Fortschritt der geplanten Route.",
+      "type": "number",
+      "unit": "om2:percent",
+      "minimum": 0,
+      "maximum": 100,
+      "readOnly": true
     }
-
-
   },
   "actions": {
-    "startJourney": {
-      "title": "Start the journey",
-      "description": "Initiates the journey of the truck.",
-      "type": "boolean"
-    },
-    "completeJourney": {
-      "title": "Complete the journey",
-      "description": "Marks the journey of the truck as completed.",
-      "type": "boolean"
-    }
-  },
-  "events": {
-    "arrivedAtDestination": {
-      "title": "Arrival at destination",
-      "description": "Event triggered when the truck arrives at its destination.",
-      "type": "boolean"
+    "progressTracker.resetProgress": {
+      "title": "Fahrfortschritt zurücksetzen",
+      "description": "Setzt den Fortschritt der Route auf 0%.",
+      "type": "null"
     }
   }
 }
