@@ -11,31 +11,32 @@
   "version": {
     "model": "1.0.0"
   },
-  "properties": {
-    "fuelSensor.fuelLevel": {
-      "title": "Benzinstand",
-      "description": "Aktueller Füllstand des Benzintanks in Litern.",
-      "type": "number",
-      "unit": "om2:litre",
-      "readOnly": true
-    },
-    "speedSensor.currentSpeed": {
-      "title": "Aktuelle Geschwindigkeit",
-      "description": "Momentane Geschwindigkeit des LKW in km/h.",
-      "type": "number",
-      "unit": "om2:kilometre-per-hour",
-      "readOnly": true
-    },
-    "progressTracker.progress": {
-      "title": "Fahrfortschritt",
-      "description": "Prozentualer Fortschritt der geplanten Route.",
-      "type": "number",
-      "unit": "om2:percent",
-      "minimum": 0,
-      "maximum": 100,
-      "readOnly": true
+  "links": [
+    {
+      "rel": "tm:submodel",
+      "href": "https://raw.githubusercontent.com/edu2904/wotfiles/refs/heads/main/LKW/FuelTank",
+      "type": "application/tm+json",
+      "instanceName": "FuelTank"
     }
+  ],
+    "properties": {
+  "speedSensor.currentSpeed": {
+    "title": "Aktuelle Geschwindigkeit",
+    "description": "Momentane Geschwindigkeit des LKW in km/h.",
+    "type": "number",
+    "unit": "om2:kilometre-per-hour",
+    "readOnly": true
   },
+  "progressTracker.progress": {
+    "title": "Fahrfortschritt",
+    "description": "Prozentualer Fortschritt der geplanten Route.",
+    "type": "number",
+    "unit": "om2:percent",
+    "minimum": 0,
+    "maximum": 100,
+    "readOnly": true
+  }
+},
   "actions": {
     "progressTracker.resetProgress": {
       "title": "Fahrfortschritt zurücksetzen",
@@ -44,3 +45,6 @@
     }
   }
 }
+
+
+
