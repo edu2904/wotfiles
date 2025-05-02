@@ -1,0 +1,30 @@
+{
+  "@context": [
+    "https://www.w3.org/2022/wot/td/v1.1"
+],
+  "@type": "tm:ThingModel",
+  "title": "Fuel Tank",
+  "version": {
+    "model": "1.0.0"
+  },
+  "events": {
+    "lowfuel": {
+        "title": "Truck is low on fuel",
+        "description": "Emittet when the trucks fuel supply is low",
+        "data": "Fuel Status Payload",
+        "type": "object",
+        "properties": {
+            "amount":{
+               "type": "integer",
+               "minimum": 0,
+               "maximum": 10
+        },
+            "unit":{
+                "type": "string"
+            }
+    }
+
+    }
+  }
+
+}
