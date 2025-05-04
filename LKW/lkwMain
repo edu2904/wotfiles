@@ -28,7 +28,7 @@
     "readOnly": true
   },
 
-  "progress": {
+  "progress2000": {
     "title": "Fahrfortschritt",
     "description": "Prozentualer Fortschritt der geplanten Route.",
     "type": "number",
