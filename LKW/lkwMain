@@ -35,6 +35,14 @@
     "minimum": 0,
     "maximum": 100,
     "readOnly": true
+  },
+  "weight": {
+    "title": "LKW weight",
+    "description": "returns the weight of the vehicle",
+    "type": "number",
+    "unit": "om2:kilogram",
+    "maximum": 2000,
+    "readOnly": true
   }
 },
   "actions": {
@@ -45,6 +53,3 @@
     }
   }
 }
-
-
-
