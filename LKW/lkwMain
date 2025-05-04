@@ -41,6 +41,7 @@
     "description": "returns the weight of the vehicle",
     "type": "number",
     "unit": "om2:kilogram",
+    "minimum": 1900,
     "maximum": 2000,
     "readOnly": true
   }
