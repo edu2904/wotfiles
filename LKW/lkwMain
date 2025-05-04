@@ -20,7 +20,7 @@
     }
   ],
     "properties": {
-  "speedSensor.currentSpeed": {
+  "currentSpeed": {
     "title": "Aktuelle Geschwindigkeit",
     "description": "Momentane Geschwindigkeit des LKW in km/h.",
     "type": "number",
@@ -28,7 +28,7 @@
     "readOnly": true
   },
 
-  "progressTracker.progress": {
+  "progress": {
     "title": "Fahrfortschritt",
     "description": "Prozentualer Fortschritt der geplanten Route.",
     "type": "number",
