@@ -20,7 +20,7 @@
     }
   ],
     "properties": {
-  "currentSpeed": {
+  "currentSpeedddddd": {
     "title": "Aktuelle Geschwindigkeit",
     "description": "Momentane Geschwindigkeit des LKW in km/h.",
     "type": "number",
