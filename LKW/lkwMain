@@ -27,6 +27,13 @@
     "unit": "om2:kilometre-per-hour",
     "readOnly": true
   },
+ "currentSpeeeeeeeeeeeeeeeeeeed20000": {
+    "title": "Aktuelle Geschwindigkeit",
+    "description": "Momentane Geschwindigkeit des LKW in km/h.",
+    "type": "number",
+    "unit": "om2:kilometre-per-hour",
+    "readOnly": true
+  },
 
   "progress": {
     "title": "Fahrfortschritt",
