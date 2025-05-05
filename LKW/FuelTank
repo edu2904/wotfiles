@@ -33,7 +33,10 @@
         "type": "number",
         "minimum": 0,
         "maximum": 300
-     }
+     },
+     "unit": {
+         "type": "string"
+      }
   }
 
 }
