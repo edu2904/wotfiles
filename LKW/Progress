@@ -13,7 +13,7 @@
         "title": "Progress",
         "description": "The current progress of the delivery",
         "type": "number",
-        "unit": "om2:percent",
+        "unit": "percent",
         "minimum": 0,
         "maximum": 100
         
