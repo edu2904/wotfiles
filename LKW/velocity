@@ -1,0 +1,23 @@
+{
+  "@context": [
+    "https://www.w3.org/2022/wot/td/v1.1"
+],
+  "@type": "tm:ThingModel",
+  "title": "Velocity",
+  "version": {
+    "model": "1.0.0"
+  },
+ 
+  "properties": {
+     "amount": {
+        "title": "Velocity",
+        "description": "The current amount of the fuel Tank",
+        "type": "number",
+        "unit": "om2:kilometre-per-hour",
+        "minimum": 0,
+        "maximum": 120
+        
+     }
+  }
+
+}
