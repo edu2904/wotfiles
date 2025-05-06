@@ -20,7 +20,7 @@
     },
    {
       "rel": "tm:submodel",
-      "href": "https://raw.githubusercontent.com/edu2904/wotfiles/refs/heads/main/LKW/velocityk",
+      "href": "https://raw.githubusercontent.com/edu2904/wotfiles/refs/heads/main/LKW/velocity",
       "type": "application/tm+json",
       "instanceName": "Velocity"
     }
