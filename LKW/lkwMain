@@ -17,6 +17,12 @@
       "href": "https://raw.githubusercontent.com/edu2904/wotfiles/refs/heads/main/LKW/FuelTank",
       "type": "application/tm+json",
       "instanceName": "FuelTank"
+    },
+    {
+      "rel": "tm:submodel",
+      "href": "https://raw.githubusercontent.com/edu2904/wotfiles/refs/heads/main/LKW/Progress",
+      "type": "application/tm+json",
+      "instanceName": "Progress"
     }
   ],
   
