@@ -1,0 +1,23 @@
+{
+  "@context": [
+    "https://www.w3.org/2022/wot/td/v1.1"
+],
+  "@type": "tm:ThingModel",
+  "title": "Progress",
+  "version": {
+    "model": "1.0.0"
+  },
+ 
+  "properties": {
+     "amount": {
+        "title": "Progress",
+        "description": "The current progress of the delivery",
+        "type": "number",
+        "unit": "om2:percent",
+        "minimum": 0,
+        "maximum": 100
+        
+     }
+  }
+
+}
