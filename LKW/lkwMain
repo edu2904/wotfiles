@@ -33,7 +33,6 @@
     "title": "status of the vehicle",
     "description": "The current status of the vehicle",
     "type": "string",
-    "enum": ["idle", "driving", "loading"],
     "readOnly": true
   }
 },
