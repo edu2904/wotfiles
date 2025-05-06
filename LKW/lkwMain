@@ -17,32 +17,47 @@
       "href": "https://raw.githubusercontent.com/edu2904/wotfiles/refs/heads/main/LKW/FuelTank",
       "type": "application/tm+json",
       "instanceName": "FuelTank"
+    },
+    {
+      "rel": "tm:submodel",
+      "href": "https://raw.githubusercontent.com/edu2904/wotfiles/refs/heads/main/LKW/tirepressure",
+      "type": "application/tm+json",
+      "instanceName": "TirePressure"
+    },
+    {
+      "rel": "tm:submodel",
+      "href": "https://raw.githubusercontent.com/edu2904/wotfiles/refs/heads/main/LKW/velocityk",
+      "type": "application/tm+json",
+      "instanceName": "Velocity"
+    },
+    {
+      "rel": "tm:submodel",
+      "href": "https://raw.githubusercontent.com/edu2904/wotfiles/refs/heads/main/LKW/Progress",
+      "type": "application/tm+json",
+      "instanceName": "Progress"
     }
   ],
-
+  
     "properties": {
-  "currentSpeeeeeeeeeeeeeeeeeeeeeeed": {
-    "title": "Aktuelle Geschwindigkeit",
-    "description": "Momentane Geschwindigkeit des LKW in km/h.",
+  "weight": {
+    "title": "weight of the vehicle",
+    "description": "The current weight of the vehicle without fuel.",
     "type": "number",
-    "unit": "om2:kilometre-per-hour",
+    "unit": "om2:kilogram",
     "readOnly": true
   },
- 
-  "progress": {
-    "title": "Fahrfortschritt",
-    "description": "Prozentualer Fortschritt der geplanten Route.",
-    "type": "number",
-    "unit": "om2:percent",
-    "minimum": 0,
-    "maximum": 100,
+
+  "status": {
+    "title": "status of the vehicle",
+    "description": "The current status of the vehicle",
+    "type": "string",
     "readOnly": true
   }
 },
   "actions": {
     "progressTracker.resetProgress": {
-      "title": "Fahrfortschritt zurücksetzen",
-      "description": "Setzt den Fortschritt der Route auf 0%.",
+      "title": "reset progress",
+      "description": "sets the progress to 0 percent.",
       "type": "null"
     }
   }
