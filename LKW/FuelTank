@@ -11,19 +11,20 @@
     "lowfuel": {
         "title": "Truck is low on fuel",
         "description": "Emittet when the trucks fuel supply is low",
-        "data": "Fuel Status Payload",
-        "type": "object",
-        "properties": {
-            "amount":{
-               "type": "integer",
-               "minimum": 0,
-               "maximum": 10
-        },
-            "unit":{
-                "type": "string"
-            }
-    }
-
+        "data": {
+             "title": "Fuel Status Payload",
+             "type": "object",
+             "properties": {
+                 "amount":{
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 10
+                 },
+                 "unit":{
+                     "type": "string"
+                 }
+         }
+      }
     }
   },
   "properties": {
