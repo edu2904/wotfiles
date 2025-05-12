@@ -16,7 +16,7 @@
              "type": "object",
              "properties": {
                  "amount":{
-                    "type": "number",
+                    "type": "number"
                 
                  }
               
@@ -28,7 +28,7 @@
      "amount": {
         "title": "Fuel Amount",
         "description": "The current amount of the fuel Tank",
-        "type": "number",
+        "type": "number"
       
      }
   }
