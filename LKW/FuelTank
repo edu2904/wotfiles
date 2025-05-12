@@ -17,8 +17,7 @@
              "properties": {
                  "amount":{
                     "type": "number",
-                    "minimum": 0,
-                    "maximum": 10
+                
                  }
               
          }
@@ -30,8 +29,7 @@
         "title": "Fuel Amount",
         "description": "The current amount of the fuel Tank",
         "type": "number",
-        "minimum": 0,
-        "maximum": 300
+      
      }
   }
 
