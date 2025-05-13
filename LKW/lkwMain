@@ -42,9 +42,12 @@
   "weight": {
     "title": "weight of the vehicle",
     "description": "The current weight of the vehicle without fuel.",
+    "data": {
+
     "type": "number",
     "unit": "om2:kilogram",
     "readOnly": true
+    }
   },
 
   "status": {
