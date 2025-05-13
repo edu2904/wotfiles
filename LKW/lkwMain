@@ -60,5 +60,17 @@
       "description": "sets the progress to 0 percent.",
       "type": "null"
     }
-  }
+  },
+ "events": {
+    "showStatus": {
+        "title": "Truck weight",
+        "description": "Shows the current weight of the truck",
+        "data": {
+             "title": "Weight Status Payload",
+             "type": "number"
+             
+              
+         }
+      }
+    }  
 }
