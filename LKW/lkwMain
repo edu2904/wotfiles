@@ -67,7 +67,12 @@
         "description": "Shows the current weight of the truck",
         "data": {
              "title": "Weight Status Payload",
-             "type": "number"
+             "type": "object",
+             "properties": {
+                     "amount":{
+                        "type": "number"
+                
+                 }
              
               
          }
