@@ -1,0 +1,28 @@
+{
+  "@context": [
+    "https://www.w3.org/2022/wot/td/v1.1"
+],
+  "@type": "tm:ThingModel",
+  "title": "Gas Station Fuel",
+  "version": {
+    "model": "1.0.0"
+  },
+  "actions": {
+    "resetProgress": {
+      "title": "reset progress",
+      "description": "sets the progress to 0 percent.",
+      "type": "string"
+    },
+
+  "properties": {
+     "amount": {
+        "title": "Fuel Amount of Gasstation",
+        "description": "The current fuel amount of the Gasstation",
+        "type": "number",
+        "maximun": 3000
+      
+     }
+  }
+
+}
+}
