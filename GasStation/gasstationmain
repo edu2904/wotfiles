@@ -1,0 +1,39 @@
+{
+  "@context": [
+    "https://www.w3.org/2022/wot/td/v1.1",
+    {
+      "om2": "http://www.ontology-of-units-of-measure.org/resource/om-2/"
+    }
+  ],
+  "@type": "tm:ThingModel",
+  "title": "GasStation",
+  "description": "Eine Tankstelle die bereit steht einen LKW vollzutanken",
+  "version": {
+    "model": "1.0.0"
+  },
+  "links": [
+    {
+      "rel": "tm:submodel",
+      "href": "https://raw.githubusercontent.com/edu2904/wotfiles/refs/heads/main/GasStation/GasStationFuel",
+      "type": "application/tm+json",
+      "instanceName": "GasStationFuel"
+    }
+   ],
+  
+    "properties": {
+
+  "status": {
+    "title": "status of the gas station",
+    "description": "The current status of the gas station",
+    "type": "string",
+    "readOnly": true
+  }
+},
+ "events": {
+    "showStatus": {
+        "title": "Truck arrived",
+        "description": "Shows the current weight of the truck",
+        "type": "string"
+    }  
+}
+}
