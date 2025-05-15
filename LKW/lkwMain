@@ -58,7 +58,7 @@
     "resetProgress": {
       "title": "reset progress",
       "description": "sets the progress to 0 percent.",
-      "type": "null"
+      "type": "string"
     }
   },
  "events": {
