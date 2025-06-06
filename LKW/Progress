@@ -17,7 +17,16 @@
         "minimum": 0,
         "maximum": 100
         
-     }
+     },
+     "destinationStatus": {
+      "title": "Status of reached/unreached destinations",
+      "description": "Shows the current status of the destination: 0 = not reached yes, 1 = successfully reached, 2 = failure",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+      
   }
 
+}
 }
