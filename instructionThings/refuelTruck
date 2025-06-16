@@ -14,10 +14,9 @@
   
     "properties": {
   "id": {
-    "title": "weight of the vehicle",
-    "description": "The current weight of the vehicle without fuel.",
-    "type": "number",
-    "unit": "om2:kilogram",
+    "title": "Truck Id",
+    "description": "The Id which was assigned to the vehicle",
+    "type": "string",
     "readOnly": true
   },
 
