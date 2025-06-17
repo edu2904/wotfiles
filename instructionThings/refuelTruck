@@ -29,8 +29,8 @@
   "creationDate":{
     "title": "task creation date",
     "description": "shows the date when the task was issued",
-    "type": "string",
-    "format": "date-time"
+    "type": "string"
+    
     
   }
 
