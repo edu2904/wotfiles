@@ -34,14 +34,22 @@
     
   }
 
-
-
 },
- "events": {
-    "refuelComplete": {
-        "title": "Refueling Completed",
-        "description": "Indicates when the refueling is finished",
-        "type":"string"
-    }  
-}
+"events": {
+  "refuelBegin": {
+      "title": "Truck refuel start",
+      "description": "Indicates the start of the refueling process",
+      "type": "string"
+  },
+  "refuelUndergoing": {
+      "title": "Truck refueling in process",
+      "description": "Indicates that the refueling task is work in progress",
+      "type": "string"
+  },
+  "refuelFinished": {
+    "title": "Truck refueling end",
+    "description": "Indicates that the refueling process has been finished",
+    "type": "string"
+} 
+}     
 }
