@@ -32,7 +32,7 @@
     },
   {
       "rel": "tm:submodel",
-      "href": "https://raw.githubusercontent.com/edu2904/wotfiles/refs/heads/main/LKW/tirepressure",
+      "href": "https://raw.githubusercontent.com/edu2904/wotfiles/refs/heads/main/LKW/TirePressure",
       "type": "application/tm+json",
       "instanceName": "TirePressure"
     }
