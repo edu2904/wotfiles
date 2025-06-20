@@ -17,10 +17,7 @@
             "amount":{
                "type": "number",
                "const": 6000
-        },
-            "unit":{
-                "type": "string"
-            }
+        }
     }
 
     },
@@ -33,10 +30,7 @@
             "amount":{
                "type": "number",
                "const": 9000
-        },
-            "unit":{
-                "type": "string"
-            }
+        }
     }
 
     }
@@ -46,11 +40,6 @@
         "title": "Tire Pressure amount",
         "description": "The current amount of the fuel Tank",
         "type": "number"
-     },
-     "unit":{
-         "title" : "Tire Pressure unit",
-         "description": "Unit in mbar",
-         "type": "string"
      }
      
   }
