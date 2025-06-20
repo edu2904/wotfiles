@@ -45,9 +45,7 @@
      "amount": {
         "title": "Tire Pressure amount",
         "description": "The current amount of the fuel Tank",
-        "type": "number",
-        "minimum": 0,
-        "maximum": 300
+        "type": "number"
      },
      "unit":{
          "title" : "Tire Pressure unit",
