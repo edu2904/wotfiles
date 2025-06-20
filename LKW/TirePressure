@@ -7,34 +7,7 @@
   "version": {
     "model": "1.0.0"
   },
-  "events": {
-    "lowTirePressure": {
-        "title": "Tire Pressure is too low",
-        "description": "Emittet when the vehicles tire pressure is too low",
-        "data": "Tire Pressure Status Payload",
-        "type": "object",
-        "properties": {
-            "amount":{
-               "type": "number",
-               "const": 6000
-        }
-    }
 
-    },
-    "highTirePressure": {
-        "title": "Tire Pressure is too high",
-        "description": "Emittet when the vehicles tire pressure is too high",
-        "data": "Tire Pressure Status Payload",
-        "type": "object",
-        "properties": {
-            "amount":{
-               "type": "number",
-               "const": 9000
-        }
-    }
-
-    }
-  },
   "properties": {
      "amount": {
         "title": "Tire Pressure amount",
