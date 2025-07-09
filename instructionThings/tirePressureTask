@@ -1,1 +1,55 @@
+{
+  "@context": [
+    "https://www.w3.org/2022/wot/td/v1.1",
+    {
+      "om2": "http://www.ontology-of-units-of-measure.org/resource/om-2/"
+    }
+  ],
+  "@type": "tm:ThingModel",
+  "title": "TirePressureTask",
+  "description": "A task which is triggered when the Truck tire pressure is low and needs readjusting at a gas station",
+  "version": {
+    "model": "1.0.0"
+  },
+  
+    "properties": {
+  
+  "status": {
+    "title": "status of the vehicle",
+    "description": "The current status of the vehicle",
+    "type": "string",
+    "readOnly": true
+  },
+  "targetTruck":{
+    "title": "target truck id",
+    "description": "shows the id of the current targeted truck",
+    "type": "string",
+    "readOnly": true
+  },
+  "creationDate":{
+    "title": "task creation date",
+    "description": "shows the date when the task was issued",
+    "type": "string"
+    
+    
+  }
 
+},
+"events": {
+  "tirePressureAdjustingBegins": {
+      "title": "Tire Pressure Adjusting start",
+      "description": "Indicates the start of the tire pressure adjusting process",
+      "type": "string"
+  },
+  "tirePressureAdjustingUndergoing": {
+      "title": "Tire Pressure Adjusting in process",
+      "description": "Indicates that the tire pressure adjusting task is work in progress",
+      "type": "string"
+  },
+  "tirePressureAdjustingFinished": {
+    "title": "Tire Pressure Adjusting end",
+    "description": "Indicates that the tire pressure adjusting process has been finished",
+    "type": "string"
+} 
+}     
+}
