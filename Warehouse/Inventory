@@ -7,6 +7,16 @@
   "version": {
     "model": "1.0.0"
   },
+
+ "properties": {
+     "amount": {
+        "title": "Inventory amount",
+        "description": "Shows the amount of goods in the inventory",
+        "type": "number",
+        "maximun": 3000
+      
+     }
+  },
  "actions": {
     "addWorker": {
       "title": "Add a worker",
@@ -30,13 +40,4 @@
       }
     }  
 }
- "properties": {
-     "amount": {
-        "title": "Inventory amount",
-        "description": "Shows the amount of goods in the inventory",
-        "type": "number",
-        "maximun": 3000
-      
-     }
-  }
 }
