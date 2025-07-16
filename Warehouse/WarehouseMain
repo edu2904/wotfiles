@@ -1,1 +1,61 @@
+{
+  "@context": [
+    "https://www.w3.org/2022/wot/td/v1.1",
+    {
+      "om2": "http://www.ontology-of-units-of-measure.org/resource/om-2/"
+    }
+  ],
+  "@type": "tm:ThingModel",
+  "title": "Warehouse",
+  "description": "A Warehouse Digital Twin",
+  "version": {
+    "model": "1.0.0"
+  },
+  "links": [
+    {
+      "rel": "tm:submodel",
+      "href": "https://raw.githubusercontent.com/edu2904/wotfiles/refs/heads/main/Warehouse/Inventory",
+      "type": "application/tm+json",
+      "instanceName": "Inventory"
+    }
+  ],
+  
+    "properties": {
+  "capacity": {
+    "title": "Warehouse capacity",
+    "description": "Maximum number of items which can be stored in the warehouse",
+    "type": "number",
+    "readOnly": true
+  },
 
+  "status": {
+    "title": "status of the warehouse",
+    "description": "The current status of the warehouse",
+    "type": "string",
+    "readOnly": true
+  }
+},
+  "actions": {
+    "addWorker": {
+      "title": "Add a worker",
+      "description": "Adds a worker which reduces the time to restock the inventory",
+      "type": "string"
+    }
+  },
+ "events": {
+    "lowInventory": {
+        "title": "Inventory low",
+        "description": "is emittet when the inventory level hits a critical value which cant ensure that a truck can be loaded fully",
+        "data": {
+             "title": "Inventory Payload",
+             "type": "object",
+             "properties": {
+                     "amount":{
+                        "type": "number"
+                
+                 }
+             }
+      }
+    }  
+}
+}
