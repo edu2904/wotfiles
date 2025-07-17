@@ -46,21 +46,5 @@
       "description": "Removes a worker when the inventory reaches a reasonable amount",
       "type": "string"
     }
-  },
- "events": {
-    "lowInventory": {
-        "title": "Inventory low",
-        "description": "is emittet when the inventory level hits a critical value which cant ensure that a truck can be loaded fully",
-        "data": {
-             "title": "Inventory Payload",
-             "type": "object",
-             "properties": {
-                     "amount":{
-                        "type": "number"
-                
-                 }
-             }
-      }
-    }  
-}
+  }
 }
