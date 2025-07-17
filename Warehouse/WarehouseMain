@@ -40,6 +40,11 @@
       "title": "Add a worker",
       "description": "Adds a worker which reduces the time to restock the inventory",
       "type": "string"
+    },
+    "reduceWorker": {
+      "title": "Reduce a worker",
+      "description": "Removes a worker when the inventory reaches a reasonable amount",
+      "type": "string"
     }
   },
  "events": {
