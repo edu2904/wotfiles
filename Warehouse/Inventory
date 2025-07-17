@@ -17,13 +17,6 @@
       
      }
   },
- "actions": {
-    "addWorker": {
-      "title": "Add a worker",
-      "description": "Adds a worker which reduces the time to restock the inventory",
-      "type": "string"
-    }
-  },
  "events": {
     "lowInventory": {
         "title": "Inventory low",
