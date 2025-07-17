@@ -17,6 +17,12 @@
       "href": "https://raw.githubusercontent.com/edu2904/wotfiles/refs/heads/main/Warehouse/Inventory",
       "type": "application/tm+json",
       "instanceName": "Inventory"
+    },
+ {
+      "rel": "tm:submodel",
+      "href": "https://raw.githubusercontent.com/edu2904/wotfiles/refs/heads/main/Warehouse/Workers",
+      "type": "application/tm+json",
+      "instanceName": "Workers"
     }
   ],
   
