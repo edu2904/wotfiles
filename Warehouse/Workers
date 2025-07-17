@@ -12,7 +12,7 @@
      "amount": {
         "title": "Worker amount",
         "description": "Shows current amount of workers in the warehouse",
-        "type": "number",
+        "type": "number"
      }
   }
 }
