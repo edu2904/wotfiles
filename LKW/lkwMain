@@ -52,6 +52,12 @@
     "description": "The current status of the vehicle",
     "type": "string",
     "readOnly": true
+  },
+"capacity": {
+    "title": "capacity of the vehicle",
+    "description": "The current maximum inventory space of the vehicle",
+    "type": "number",
+    "readOnly": true
   }
 },
   "actions": {
