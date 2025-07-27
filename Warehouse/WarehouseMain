@@ -2,7 +2,8 @@
   "@context": [
     "https://www.w3.org/2022/wot/td/v1.1",
     {
-      "om2": "http://www.ontology-of-units-of-measure.org/resource/om-2/"
+      "om2": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+      "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#"
     }
   ],
   "@type": "tm:ThingModel",
@@ -26,7 +27,17 @@
     }
   ],
   
+"properties": {
+  "location":{
+    "title": "Warehouse location",
+    "description": "The current location of the warehouse",
+    "type": "object",
+    "readOnly": true,
     "properties": {
+      "geo:lat" : {"type": "number"},
+      "geo:long": {"type": "number"}
+    }
+  },
   "capacity": {
     "title": "Warehouse capacity",
     "description": "Maximum number of items which can be stored in the warehouse",
