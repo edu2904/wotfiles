@@ -21,7 +21,16 @@
    ],
   
     "properties": {
-
+ "location":{
+    "title": "Warehouse location",
+    "description": "The current location of the warehouse",
+    "type": "object",
+    "readOnly": true,
+    "properties": {
+      "geo:lat" : {"type": "number"},
+      "geo:long": {"type": "number"}
+    }
+  },
   "status": {
     "title": "status of the gas station",
     "description": "The current status of the gas station",
