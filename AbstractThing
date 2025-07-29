@@ -1,0 +1,24 @@
+{
+  "@context": [
+    "https://www.w3.org/2022/wot/td/v1.1",
+    {
+      "om2": "http://www.ontology-of-units-of-measure.org/resource/om-2/"
+    }
+  ],
+  "@type": "tm:ThingModel",
+  "title": "Generic Ditto Values",
+  "version": {
+    "model": "1.0.0"
+  },
+  "tm:optional": [],
+  "properties": {
+    "utilization": {
+      "title": "Utilization rate",
+      "description": "Shows the current utilization of a digital twin",
+      "type": "number",
+      "unit": "om2:percent",
+      "minimum": 0.0,
+      "maximum": 100.0
+    }
+  }
+}
