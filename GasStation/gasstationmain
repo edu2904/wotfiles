@@ -12,6 +12,11 @@
     "model": "1.0.0"
   },
   "links": [
+   {
+      "rel": "tm:extends",
+      "href": "https://raw.githubusercontent.com/edu2904/wotfiles/refs/heads/main/AbstractThing",
+      "type": "application/tm+json"
+    },
     {
       "rel": "tm:submodel",
       "href": "https://raw.githubusercontent.com/edu2904/wotfiles/refs/heads/main/GasStation/GasStationFuel",
@@ -30,12 +35,6 @@
       "geo:lat" : {"type": "number"},
       "geo:long": {"type": "number"}
     }
-  },
-  "status": {
-    "title": "status of the gas station",
-    "description": "The current status of the gas station",
-    "type": "string",
-    "readOnly": true
   }
 },
  "events": {
