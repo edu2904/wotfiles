@@ -19,6 +19,12 @@
       "unit": "om2:percent",
       "minimum": 0.0,
       "maximum": 100.0
-    }
+    },
+  "status": {
+    "title": "status of the warehouse",
+    "description": "The current status of the warehouse",
+    "type": "string",
+    "readOnly": true
+  }
   }
 }
