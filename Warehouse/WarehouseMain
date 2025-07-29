@@ -15,7 +15,7 @@
   "links": [
    {
       "rel": "tm:extends",
-      "href": "https://eclipse-ditto.github.io/ditto-examples/wot/models/switchable-1.0.0.tm.jsonld",
+      "href": "https://raw.githubusercontent.com/edu2904/wotfiles/refs/heads/main/AbstractThing",
       "type": "application/tm+json"
     },
     {
