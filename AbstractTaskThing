@@ -1,0 +1,55 @@
+{
+  "@context": [
+    "https://www.w3.org/2022/wot/td/v1.1",
+    {
+      "om2": "http://www.ontology-of-units-of-measure.org/resource/om-2/"
+    }
+  ],
+  "@type": "tm:ThingModel",
+  "title": "Task",
+  "description": "A task which is triggered when the Task requirements are fulfilled",
+  "version": {
+    "model": "1.0.0"
+  },
+  
+    "properties": {
+  
+  "status": {
+    "title": "task status",
+    "description": "The current status of the task. Whether its Starting, Undergoing or Finished",
+    "type": "string",
+    "readOnly": true
+  },
+  "targetThing":{
+    "title": "Target Thing",
+    "description": "shows the id of the current thing which received the task",
+    "type": "string",
+    "readOnly": true
+  },
+  "creationDate":{
+    "title": "task creation date",
+    "description": "shows the date when the task was issued",
+    "type": "string"
+    
+    
+  }
+
+},
+"events": {
+  "taskBegins": {
+      "title": "Task start",
+      "description": "Indicates the start of the task process",
+      "type": "string"
+  },
+  "taskUndergoing": {
+      "title": "Task in process",
+      "description": "Indicates that the task is work in progress",
+      "type": "string"
+  },
+  "taskFinished": {
+    "title": "Task end",
+    "description": "Indicates that the task has been finished",
+    "type": "string"
+} 
+}     
+}
