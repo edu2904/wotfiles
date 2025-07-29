@@ -57,13 +57,6 @@
     "unit": "om2:kilogram",
     "readOnly": true
   },
-
-  "status": {
-    "title": "status of the vehicle",
-    "description": "The current status of the vehicle",
-    "type": "string",
-    "readOnly": true
-  },
 "capacity": {
     "title": "capacity of the vehicle",
     "description": "The current maximum inventory space of the vehicle",
