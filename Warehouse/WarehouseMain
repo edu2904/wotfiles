@@ -48,13 +48,6 @@
     "description": "Maximum number of items which can be stored in the warehouse",
     "type": "number",
     "readOnly": true
-  },
-
-  "status": {
-    "title": "status of the warehouse",
-    "description": "The current status of the warehouse",
-    "type": "string",
-    "readOnly": true
   }
 },
   "actions": {
