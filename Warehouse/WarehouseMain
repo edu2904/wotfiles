@@ -33,16 +33,6 @@
   ],
   
 "properties": {
-  "location":{
-    "title": "Warehouse location",
-    "description": "The current location of the warehouse",
-    "type": "object",
-    "readOnly": true,
-    "properties": {
-      "geo:lat" : {"type": "number"},
-      "geo:long": {"type": "number"}
-    }
-  },
   "capacity": {
     "title": "Warehouse capacity",
     "description": "Maximum number of items which can be stored in the warehouse",
