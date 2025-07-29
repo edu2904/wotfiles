@@ -10,8 +10,21 @@
   "version": {
     "model": "1.0.0"
   },
-  "tm:optional": [],
+  "tm:required": [
+    "thingId",
+    "utilization",
+    "status"
+  ],
+  "tm:optional": [
+    "location"
+  ],
   "properties": {
+    "thingId":{
+      "title": "Thing ID",
+      "description": "Identifier of the Thing with a unique ID",
+      "type": "string",
+      "readOnly": true
+    },
     "utilization": {
       "title": "Utilization rate",
       "description": "Shows the current utilization of a digital twin",
@@ -25,6 +38,16 @@
     "description": "The current status of the warehouse",
     "type": "string",
     "readOnly": true
+  },
+  "location":{
+    "title": "Warehouse location",
+    "description": "The current location of the warehouse",
+    "type": "object",
+    "readOnly": true,
+    "properties": {
+      "geo:lat" : {"type": "number"},
+      "geo:long": {"type": "number"}
+    }
   }
   }
 }
