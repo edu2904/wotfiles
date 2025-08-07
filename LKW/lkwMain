@@ -69,13 +69,13 @@
       "title": "reset progress",
       "description": "sets the progress to 0 percent.",
       "type": "string"
-    }
-  },
+    },
      "taskSearch":{
       "title": "Truck Task search",
       "description": "Truck is waiting until a task is found",
       "type": "boolean"
-     },
+     }
+    },
  "events": {
     "showStatus": {
         "title": "Truck weight",
