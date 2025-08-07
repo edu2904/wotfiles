@@ -76,7 +76,7 @@
       "description": "Truck is waiting until a task is found",
       "type": "boolean"
      },
- "events": {
+ 
     "showStatus": {
         "title": "Truck weight",
         "description": "Shows the current weight of the truck",
@@ -92,6 +92,6 @@
               
          }
       }
-    }  
+     
 }
 }
