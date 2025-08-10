@@ -61,7 +61,18 @@
       "description": "The current maximum inventory space of the vehicle",
       "type": "number",
       "readOnly": true
+    },
+ "targetLocation":{
+    "title": "Warehouse location",
+    "description": "The current location of the warehouse",
+    "type": "object",
+    "readOnly": true,
+    "properties": {
+      "name": {"type: "string"},
+      "geo:lat" : {"type": "number"},
+      "geo:long": {"type": "number"}
     }
+  }
   },
   "actions": {
     "resetProgress": {
