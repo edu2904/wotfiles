@@ -68,7 +68,7 @@
     "type": "object",
     "readOnly": true,
     "properties": {
-      "name": {"type: "string"},
+      "name": {"type": "string"},
       "geo:lat" : {"type": "number"},
       "geo:long": {"type": "number"}
     }
