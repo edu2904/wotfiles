@@ -12,7 +12,7 @@
     "model": "1.0.0"
   },
   "links": [
-   {
+    {
       "rel": "tm:extends",
       "href": "https://raw.githubusercontent.com/edu2904/wotfiles/refs/heads/main/AbstractThing",
       "type": "application/tm+json"
@@ -35,64 +35,64 @@
       "type": "application/tm+json",
       "instanceName": "Velocity"
     },
-  {
+    {
       "rel": "tm:submodel",
       "href": "https://raw.githubusercontent.com/edu2904/wotfiles/refs/heads/main/LKW/TirePressure",
       "type": "application/tm+json",
       "instanceName": "TirePressure"
     },
- {
+    {
       "rel": "tm:submodel",
       "href": "https://raw.githubusercontent.com/edu2904/wotfiles/refs/heads/main/LKW/Inventory",
       "type": "application/tm+json",
       "instanceName": "Inventory"
     }
   ],
-  
-    "properties": {
-  "weight": {
-    "title": "weight of the vehicle",
-    "description": "The current weight of the vehicle without fuel.",
-    "type": "number",
-    "unit": "om2:kilogram",
-    "readOnly": true
+  "properties": {
+    "weight": {
+      "title": "weight of the vehicle",
+      "description": "The current weight of the vehicle without fuel.",
+      "type": "number",
+      "unit": "om2:kilogram",
+      "readOnly": true
+    },
+    "capacity": {
+      "title": "capacity of the vehicle",
+      "description": "The current maximum inventory space of the vehicle",
+      "type": "number",
+      "readOnly": true
+    }
   },
-"capacity": {
-    "title": "capacity of the vehicle",
-    "description": "The current maximum inventory space of the vehicle",
-    "type": "number",
-    "readOnly": true
-  }
-},
   "actions": {
     "resetProgress": {
       "title": "reset progress",
       "description": "sets the progress to 0 percent.",
       "type": "string"
     },
-     "taskSearch":{
+    "taskSearch": {
       "title": "Truck Task search",
       "description": "Truck is waiting until a task is found",
       "type": "boolean"
-     }
-    },
- "events": {
+    }
+  },
+  "events": {
     "showStatus": {
-        "title": "Truck weight",
-        "description": "Shows the current weight of the truck",
-        "data": {
-             "title": "Weight Status Payload",
-             "type": "object",
-             "properties": {
-                     "amount":{
-                        "type": "number"
-                
-                 }
-             
-              
-         }
+      "title": "Truck weight",
+      "description": "Shows the current weight of the truck",
+      "data": {
+        "title": "Weight Status Payload",
+        "type": "object",
+        "properties": {
+          "amount": {
+            "type": "number"
+          }
+        }
       }
-}
-     
-}
+    },
+    "truckArrived": {
+      "title": "Truck Arrival",
+      "description": "Emits when the truck arrives at the current destination it was heading to",
+      "type": "boolean"
+    }
+  }
 }
