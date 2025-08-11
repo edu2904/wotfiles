@@ -104,6 +104,11 @@
       "title": "Truck Arrival",
       "description": "Emits when the truck arrives at the current destination it was heading to",
       "type": "boolean"
-    }
+    },
+    "tooLongIdle": {
+      "title": "Truck Idle",
+      "description": "Emits when the truck is ready to go but is without a task",
+      "type": "String"
+}
   }
 }
