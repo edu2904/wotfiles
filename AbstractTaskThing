@@ -47,10 +47,41 @@
       "description": "Indicates that the task is work in progress",
       "type": "string"
   },
+  "taskPaused": {
+    "title": "Task paused",
+    "description": "Emits when a task is temporarily paused",
+    "type": "string"
+  },
+  "taskContinued": {
+    "title": "Task continued",
+    "description": "Emits when a stopped task was resumed",
+    "type": "string"
+  }, 
+  "taskEscalated":{
+    "title": "Task escalated",
+    "description": "Emits when the task requires escalation",
+    "type": "string"
+  },
   "taskFinished": {
     "title": "Task end",
     "description": "Indicates that the task has been finished",
     "type": "string"
-} 
+},
+  "taskFailed": {
+    "title": "Task failed",
+    "description": "Emits when a task failed and cant be fulfilled anymore",
+    "type": "string"
+  },
+  "taskTimer":{
+    "title": "Task timer",
+    "description": "Shows the amount of the time the target thing needed to complete the task",
+    "type": "string"
+  },
+  "taskDeadLineReached": {
+    "title": "Deadline reached",
+    "description": "Emits when the task deadline is reached",
+    "type": "string"
+  } 
 }     
 }
+
