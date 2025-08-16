@@ -29,7 +29,7 @@
   "type":{
      "title": "Task Name",
      "descripttion": "The name of the task which shows its purpose",
-     "type": "string,
+     "type": "string",
      "readOnly": true
   },
   "creationDate":{
