@@ -26,6 +26,12 @@
     "type": "string",
     "readOnly": true
   },
+  "type":{
+     "title": "Task Name",
+     "descripttion": "The name of the task which shows its purpose",
+     "type": "string,
+     "readOnly": true
+  },
   "creationDate":{
     "title": "task creation date",
     "description": "shows the date when the task was issued",
