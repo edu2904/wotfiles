@@ -18,5 +18,19 @@
       "href": "https://raw.githubusercontent.com/edu2904/wotfiles/refs/heads/main/AbstractTaskThing",
       "type": "application/tm+json"
     }
-]
+],
+"properties": {
+ "from": {
+    "title": "Origin Warehouse",
+    "description": "The warehouse where the task starts",
+    "type": "string",
+    "readOnly": true
+  },
+ "to": {
+    "title": "End Warehouse",
+    "description": "The warehouse where the task ends",
+    "type": "string",
+    "readOnly": true
+  }
+}
 }
