@@ -7,7 +7,7 @@
   ],
   "@type": "tm:ThingModel",
   "title": "LoadTruck",
-  "description": "A task which is triggered when the has finished its tour needs restocking at the main warehouse",
+  "description": "A task which is triggered when the truck reached its destination and needs to load his cargo",
   "version": {
     "model": "1.0.0"
   },
