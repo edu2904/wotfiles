@@ -32,5 +32,12 @@
     "type": "string",
     "readOnly": true
   }
+},
+"actions": {
+    "taskLoadStart": {
+      "title": "Start Task",
+      "description": "Starts the loading task",
+      "type": "string"
+    }
 }
 }
