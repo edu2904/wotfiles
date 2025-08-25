@@ -7,7 +7,7 @@
   ],
   "@type": "tm:ThingModel",
   "title": "LKW",
-  "description": "Ein smarter LKW mit eingebauten Sensoren für Benzinstand, Geschwindigkeit und Fahrfortschritt.",
+  "description": "A smart truck with embedded sensors for fuel amount, velocity and progress etc.",
   "version": {
     "model": "1.0.0"
   },
