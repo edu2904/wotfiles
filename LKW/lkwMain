@@ -109,6 +109,16 @@
       "title": "Truck Idle",
       "description": "Emits when the truck is ready to go but is without a task",
       "type": "String"
-}
+    },
+    "taskSuccessful":{
+      "title": "Task successful",
+      "description": "Emits when a truck successfully finished its task",
+      "type": "String"
+    },
+    "taskFailed":{
+      "title": "Task failed",
+      "description": "Emits when a truck failed its task",
+      "type": "String"
+    }
   }
 }
