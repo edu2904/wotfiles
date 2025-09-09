@@ -37,10 +37,19 @@
     "description": "shows the date when the task was issued",
     "type": "string",
     "readOnly": true
-    
-    
-  }
-
+},
+"urgency":{
+    "title": "task urgency",
+    "description": "shows how urgend the completion of the task is",
+    "type": "string",
+    "readOnly": true
+},
+"estimatedCompletionTime":{
+    "title": "task completion time(estimated)",
+    "description": "estimats how long it will take so fulfill the task",
+    "type": "number",
+    "readOnly": true
+}
 },
 "events": {
   "taskBegins": {
