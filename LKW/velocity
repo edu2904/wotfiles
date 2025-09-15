@@ -1,6 +1,9 @@
 {
   "@context": [
-    "https://www.w3.org/2022/wot/td/v1.1"
+    "https://www.w3.org/2022/wot/td/v1.1",
+ {
+      "om2": "http://www.ontology-of-units-of-measure.org/resource/om-2/"
+    }
 ],
   "@type": "tm:ThingModel",
   "title": "Velocity",
@@ -11,7 +14,7 @@
   "properties": {
      "amount": {
         "title": "Velocity",
-        "description": "The current amount of the fuel Tank",
+        "description": "The current velocity",
         "type": "number",
         "unit": "om2:kilometre-per-hour",
         "minimum": 0,
