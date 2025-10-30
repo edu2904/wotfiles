@@ -119,6 +119,11 @@
       "title": "Task failed",
       "description": "Emits when a truck failed its task",
       "type": "String"
+    },
+    "tirePressureTooLow":{
+      "title": "Tire pressure critical",
+      "description": "Emits when a truck reached a critcal tire pressure value",
+      "type": "String"
     }
   }
 }
