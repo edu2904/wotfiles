@@ -124,6 +124,11 @@
       "title": "Tire pressure critical",
       "description": "Emits when a truck reached a critcal tire pressure value",
       "type": "String"
+    },
+   "fuelTooLow":{
+      "title": "Fuel value critical",
+      "description": "Emits when a truck reached a critcal fuel value",
+      "type": "String"
     }
   }
 }
