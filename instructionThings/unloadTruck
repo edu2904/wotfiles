@@ -35,7 +35,7 @@
 "quantity": {
     "title": "Cargo quantitiy",
     "description": "The quantitiy of cargo set for the task",
-    "type": "string",
+    "type": "number",
     "readOnly": true
 }
 },
