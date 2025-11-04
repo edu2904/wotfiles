@@ -31,7 +31,13 @@
     "description": "The warehouse where the task ends",
     "type": "string",
     "readOnly": true
-  }
+  },
+"quantity": {
+    "title": "Cargo quantitiy",
+    "description": "The quantitiy of cargo set for the task",
+    "type": "string",
+    "readOnly": true
+}
 },
 "actions": {
     "taskLoadStart": {
