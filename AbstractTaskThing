@@ -20,7 +20,7 @@
     "type": "string",
     "readOnly": true
   },
-  "targetThing":{
+  "targetThings":{
     "title": "Target Thing",
     "description": "shows the id of the current thing which received the task",
     "type": "array",
