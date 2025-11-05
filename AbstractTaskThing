@@ -23,8 +23,11 @@
   "targetThing":{
     "title": "Target Thing",
     "description": "shows the id of the current thing which received the task",
-    "type": "string",
-    "readOnly": true
+    "type": "array",
+      "items": {
+        "type": "string"
+      }
+     "readOnly": true
   },
   "type":{
      "title": "Task Name",
