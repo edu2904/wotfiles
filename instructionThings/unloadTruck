@@ -45,5 +45,11 @@
       "description": "Starts the unloading task",
       "type": "string"
     }
-}
+},
+"events": {
+  "taskAborted": {
+      "title": "Task failed",
+      "description": "Informs the target truck that the task has failed and needs to be aborted",
+      "type": "string"
+  }
 }
